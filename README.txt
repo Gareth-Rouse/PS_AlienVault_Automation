@@ -8,5 +8,5 @@ To bind a macro as a hotkey:
 1. Find Powershell in windows
 2. Make a shortcut to the Desktop
 3. Right click -> Proprieties
-4. Make the target : %SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File ""FILELOCATION"" ""
+4. Make the target : %SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File ""FILELOCATION""
 5. Add a Hotkey below
