@@ -1,3 +1,23 @@
+
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+4 of 287
+git
+Inbox
+	x
+Gareth Rouse <gareth.rouse@gmail.com>
+	
+Attachments7:13 AM (14 hours ago)
+	
+to me
+
+Attachments area
+	
+	
+	
+
 $cSource = @'
 using System;
 using System.Drawing;
@@ -123,27 +143,36 @@ public static void SingleClick()
 '@
 Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,System.Drawing
 
-sleep -seconds 1
+sleep -seconds 0.01
 
 ##Double Click Alarm
 [ClickerTwo]::SingleClick()
+[ClickerTwo]::SingleClick()
+[ClickerTwo]::SingleClick()
 
-sleep -seconds 1
-
-## Click Apply Label
-[Clicker]::LeftClickAtPoint(4190,304)
-
-sleep -seconds 1
-
-## Click False Positive
-[Clicker]::LeftClickAtPoint(4035,524) 
-
-sleep -seconds 1
+sleep -seconds 2.5
 
 ## Click Apply Label
-[Clicker]::LeftClickAtPoint(4137,645) 
- 
+[Clicker]::LeftClickAtPoint(361,404)
+sleep -seconds 0.1
+[Clicker]::LeftClickAtPoint(361,404)
+sleep -seconds 0.1
+[Clicker]::LeftClickAtPoint(361,404)
+
 sleep -seconds 2
 
+## Click No action
+[Clicker]::LeftClickAtPoint(374,478) 
+
+sleep -seconds 2
+
+## Click Apply Label
+[Clicker]::LeftClickAtPoint(24,55) 
+ 
+##sleep -seconds 2.5
+
 ## Click X
-[Clicker]::LeftClickAtPoint(4511,234) 
+##[Clicker]::LeftClickAtPoint(4511,234) 
+
+AvAnywhereMacro.txt
+Displaying AvAnywhereMacro.txt.
