@@ -156,13 +156,13 @@ $wshell.AppActivate('title of the application window')
 sleep -seconds 0.1
 $wshell.SendKeys('{Tab}')
 
-sleep -seconds 1
+sleep -seconds .6
 
 ## Type SOC in "request by"
 Add-Type -AssemblyName System.Windows.Forms    
 sleep -seconds 0.1
 'SOC'.ToCharArray() | ForEach-Object {[System.Windows.Forms.SendKeys]::SendWait($_)}
-sleep -seconds 1
+sleep -seconds .7
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('title of the application window')
 sleep -seconds 0.1
@@ -178,7 +178,7 @@ sleep -seconds .6
 Add-Type -AssemblyName System.Windows.Forms    
 sleep -seconds 0.1
 'ALienVault'.ToCharArray() | ForEach-Object {[System.Windows.Forms.SendKeys]::SendWait($_)}
-sleep -seconds 1
+sleep -seconds .7
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('title of the application window')
 sleep -seconds 0.1
@@ -190,7 +190,7 @@ sleep -seconds .6
 Add-Type -AssemblyName System.Windows.Forms    
 sleep -seconds 0.1
 'SI'.ToCharArray() | ForEach-Object {[System.Windows.Forms.SendKeys]::SendWait($_)}
-sleep -seconds 1
+sleep -seconds .7
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('title of the application window')
 sleep -seconds 0.1
@@ -202,7 +202,7 @@ sleep -seconds .6
 Add-Type -AssemblyName System.Windows.Forms    
 sleep -seconds 0.1
 'T'.ToCharArray() | ForEach-Object {[System.Windows.Forms.SendKeys]::SendWait($_)}
-sleep -seconds 1
+sleep -seconds .7
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('title of the application window')
 sleep -seconds 0.1
