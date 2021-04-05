@@ -9,5 +9,6 @@ To bind a macro as a hotkey:
 2. Make a shortcut to the Desktop
 3. Right click -> Proprieties
 4. Make the target : %SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File ""FILELOCATION""
+##"FILELOCATION" is your .ps1 file
 5. Start in: %HOMEDRIVE%%HOMEPATH%
 6. Add a Hotkey below [Copy the shortcut if the Hotkey does not work first time]
